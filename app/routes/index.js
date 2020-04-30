@@ -24,7 +24,8 @@ const index = (app, db) => {
     const isLoggedIn = sessionHandler.isLoggedInMiddleware;
 
     //Middleware to check if user has admin rights
-    const isAdmin = sessionHandler.isAdminUserMiddleware;
+    //const isAdmin = sessionHandler.isAdminUserMiddleware;
+    const isAdmin = true 
 
     // The main page of the app
     app.get("/", sessionHandler.displayWelcomePage);
